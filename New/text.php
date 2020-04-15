@@ -1,3 +1,11 @@
+<?php session_start();
+if($_SESSION["login"] == false){
+    header("location: login");
+    exit();
+}
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,12 +16,6 @@
     <title>Document</title>
 </head>
 <body>
-
-<?php session_start();
-if($_SESSION["login"] == false){
-    header("location: login");
-    exit();
-}
-echo "\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu est ac dui accumsan interdum vel non nulla. Nulla vel orci id dui viverra dignissim in id ante. Sed congue sem lobortis lacus elementum mollis. Ut dapibus risus felis, sit amet convallis urna efficitur non. Praesent et tristique dui. Donec ut dui nisl. Etiam imperdiet imperdiet faucibus. In turpis ligula, consectetur sit amet aliquam eu, egestas nec nulla. Nullam eros ipsum, posuere sed ante et, mollis ultrices lorem. Cras facilisis leo ligula, non pretium magna aliquet sed. Ut aliquet sodales aliquet. Nulla a leo vel nibh accumsan vehicula sed semper ipsum. Ut nulla erat, posuere eget mattis at, finibus nec tortor. Donec vel interdum elit, nec pellentesque orci. Fusce tempor rutrum metus, at facilisis sem maximus vitae. Pellentesque blandit, ipsum non feugiat cursus, lectus ante hendrerit felis, eget interdum urna nisi a dui." ?>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu est ac dui accumsan interdum vel non nulla. Nulla vel orci id dui viverra dignissim in id ante. Sed congue sem lobortis lacus elementum mollis. Ut dapibus risus felis, sit amet convallis urna efficitur non. Praesent et tristique dui. Donec ut dui nisl. Etiam imperdiet imperdiet faucibus. In turpis ligula, consectetur sit amet aliquam eu, egestas nec nulla. Nullam eros ipsum, posuere sed ante et, mollis ultrices lorem. Cras facilisis leo ligula, non pretium magna aliquet sed. Ut aliquet sodales aliquet. Nulla a leo vel nibh accumsan vehicula sed semper ipsum. Ut nulla erat, posuere eget mattis at, finibus nec tortor. Donec vel interdum elit, nec pellentesque orci. Fusce tempor rutrum metus, at facilisis sem maximus vitae. Pellentesque blandit, ipsum non feugiat cursus, lectus ante hendrerit felis, eget interdum urna nisi a dui."</p>
 </body>
 </html>
