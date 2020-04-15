@@ -1,6 +1,7 @@
 <?php
 
 include 'database_handler.php';
+include 'registration.html';
 session_start();
 
 if (isset($_SESSION['registration']))
@@ -37,8 +38,3 @@ $password = $_SESSION['password'] ?? null;
 
 
 ?>
-<form method="post">
-    <label>Your name: <input name="name"></label>
-    <label>Your password: <input name="password"></label>
-    <button type="submit">save</button>
-</form>

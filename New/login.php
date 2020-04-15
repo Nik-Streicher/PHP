@@ -1,7 +1,7 @@
 <?php
 
 include 'database_handler.php';
-
+include 'login.html';
 session_start();
 if ($_SESSION["registration"] == false) {
     header("location: registration");
@@ -20,12 +20,5 @@ if ($login->check($_POST['name'] ?? null, $_POST['password'] ?? null)) {
 }
 
 
-?>
-
-<form method="post">
-    <label>Your name: <input name="name"></label>
-    <label>Your password: <input name="password"></label>
-    <button type="submit">submit</button>
-</form>
 
 
